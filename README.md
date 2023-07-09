@@ -4,6 +4,8 @@ This repository is a derivative of the original 2D ARC, modified to focus on 1D 
 
 The impetus for this shift to 1D lies in its compatibility with existing methodologies, including transformer-based, DSL-based, and search-based approaches. Such architectures are more harmonious with a 1D model compared to a 2D one.
 
+When processing 2D data, we often need to flatten it into a 1D form to fit into our models. However, this transformation can cause the loss of significant structural cues inherent to the original 2D context. While our models may learn to interpret the structure in this flattened form, it's uncertain whether the reasoning employed is analogous to human cognitive processes or if it's solely based on this transformed representation. Therefore, working with 1D data inherently circumvents these issues, enabling models to reason on the data in its original form.
+
 Moreover, the 1D focus allows for concentration on reasoning and abstraction within a more compact space, eliminating concerns associated with the complexities that come with a 2D approach. These include a loss of a well-defined order and an expanded problem space. Therefore, this 1D adaptation offers an advantageous starting point for exploring reasoning and abstraction.
 
 *"ARC can be seen as a general artificial intelligence benchmark, as a program synthesis benchmark, or as a psychometric intelligence test. It is targeted at both humans and artificially intelligent systems that aim at emulating a human-like form of general fluid intelligence."*
