@@ -5,3 +5,11 @@
 **0ca9ddb6:**  The agent will need to add a unique pattern block to the left and right of blue or red tiles.  These should overlap all other tiles, including black and other colors.  All other that are not red or blue are left unchanged.
 
 **0d3d703e:**  The agent will need to learn mappings from input colors to output colors.  These mappings will need to be learned from several samples.
+
+**00d62c1b:** The agent will learn how to flood fill between two green tiles.  All other tiles will be ignored, it will fill in the back between two green.
+
+**0dfd9992:** The agent will need to learn how to complete the corrupted sequences by looking at other parts.  NOTE:  ANOTHER CHALLENGE FOR THIS MAY BE TO MAKE THE EXACT SAME PATTERN IN ONE OF THE SAMPLES, AND CORRUPT THE INPUT SO MUCH THAT THE AGENT WILL NEED TO USE THE OUTPUT SAMPLE AS A REFERENCE.  THIS WOULD IMPLY THE AGENT WILL REMEMBER DETAILS FROM PRIOR SAMPLES, INSTEAD OF JUST TRANSFORMS.
+
+**0e206a2e:** The agent will need to learn how to find similar shapes (flipped or non-flipped) consisting of red yellow and blue.  It will use this to know how to change the color from black to the color found with the similar shape.  It will then need to remove the colored version of the shape by replacing it with black.
+
+**1a07d186:** Gravity attractors, the agent will need to learn to pull all tiles of the same color towards the largest clusters.  It should remove all instances of tile colors that do not have a cluster.  A cluster is a set of tiles of the same color greater than 1.
