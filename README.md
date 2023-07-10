@@ -1,4 +1,4 @@
-# The Abstraction and Reasoning Corpus (ARC)
+# The 1D Abstraction and Reasoning Corpus (ARC)
 
 This repository is a derivative of the original 2D ARC, modified to focus on 1D ARC problems. The shift towards 1D aligns better with contemporary algorithmic architectures and it doesn't compromise the integrity of reasoning or abstraction - an algorithm capable of 1D reasoning should eventually extend to 2D.
 
