@@ -13,3 +13,11 @@
 **0e206a2e:** The agent will need to learn how to find similar shapes (flipped or non-flipped) consisting of red yellow and blue.  It will use this to know how to change the color from black to the color found with the similar shape.  It will then need to remove the colored version of the shape by replacing it with black.
 
 **1a07d186:** Gravity attractors, the agent will need to learn to pull all tiles of the same color towards the largest clusters.  It should remove all instances of tile colors that do not have a cluster.  A cluster is a set of tiles of the same color greater than 1.
+
+**1b2d62fb:** Agent needs to learn that we need to take the intersection between the subsequence before the middle tile and after, and mark only those where black appears in both.
+
+**1b60fb0c:** Agent needs to learn to flip the pattern on the right, onto the left side of the first blue tile, and change the color to red.
+
+**1bfc4729:** Agent needs to complete the shape starting from whereever the colored tiles are in the sequence and stretching the same shape to the edges.  The shape always has one black tile after the first colored tile.
+
+**1c786137:** This one has a difficult time fitting into 1D.  Original used the same colored boxes, but in 1D it is more subtle.  The agent needs to find the pattern between two contiguous subsequences which are the same color, which only appear twice in the sequence.
