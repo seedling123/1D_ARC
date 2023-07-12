@@ -21,3 +21,11 @@
 **1bfc4729:** Agent needs to complete the shape starting from whereever the colored tiles are in the sequence and stretching the same shape to the edges.  The shape always has one black tile after the first colored tile.
 
 **1c786137:** This one has a difficult time fitting into 1D.  Original used the same colored boxes, but in 1D it is more subtle.  The agent needs to find the pattern between two contiguous subsequences which are the same color, which only appear twice in the sequence.
+
+**1caeab9d:** This was originally an alignment strategy in ARC.  This has been changed to moving the selected items into their correct slots as alignment doesn't work in 1D, unless we align to one side but that is too close to other problems.
+
+**1cf80156:** Simple cropping operation.  Remove all black tiles not part of the sequence shape.
+
+**1e0a9b12:** Horizontal gravity.  The agent needs to learn how to slide all of the blocks to the right most side s.t. there exists no black tiles between them.
+
+**1e32b0e9:** Although the structure of this problem translates to 1D quite well, it is actually difficult for a human to see what is going on.  In this case, we are completing the object in the first 1x6 block with the partition block's color in the remaining 1x6 blocks.
