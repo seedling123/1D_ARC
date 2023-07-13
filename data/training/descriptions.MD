@@ -29,3 +29,11 @@
 **1e0a9b12:** Horizontal gravity.  The agent needs to learn how to slide all of the blocks to the right most side s.t. there exists no black tiles between them.
 
 **1e32b0e9:** Although the structure of this problem translates to 1D quite well, it is actually difficult for a human to see what is going on.  In this case, we are completing the object in the first 1x6 block with the partition block's color in the remaining 1x6 blocks.
+
+**1f0c79e5:** Look at the three colored tile.  If the red block appears on the left, it needs to continue color till left side of sequence, if on the right, do the same for the right.  If in the middle, it needs to learn to keep the three colored tile directly where it is, changing only the red tile to the color it is in.  Agent should learn how to handle both sides, slight difference from the original training set, which gave a sample with both in it.  This one does not.
+
+**1f85a75f:** Agent needs to learn how to crop cohesive tile colors in a sequence of light random noise.
+
+**1f642eb9:** Agent needs to copy the colored tiles in proper order on top of the teal colored tiles.  If the sequence is to the left of the teal colored tiles, then we copy the color order from left to right, if it is on the right, we go from right to left.
+
+**1f876c06:** Agent needs to learn how to fill in the solid color between two tiles of the same color across the sequence.
