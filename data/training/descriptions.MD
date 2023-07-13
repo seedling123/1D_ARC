@@ -37,3 +37,5 @@
 **1f642eb9:** Agent needs to copy the colored tiles in proper order on top of the teal colored tiles.  If the sequence is to the left of the teal colored tiles, then we copy the color order from left to right, if it is on the right, we go from right to left.
 
 **1f876c06:** Agent needs to learn how to fill in the solid color between two tiles of the same color across the sequence.
+
+**1f876c06_extended** Agent needs to learn the same as above, but it needs to also learn that gray tiles should never be filled, and how to handle single colors, which is to just copy them over...
