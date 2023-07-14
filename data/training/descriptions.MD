@@ -39,3 +39,11 @@
 **1f876c06:** Agent needs to learn how to fill in the solid color between two tiles of the same color across the sequence.
 
 **1f876c06_extended** Agent needs to learn the same as above, but it needs to also learn that gray tiles should never be filled, and how to handle single colors, which is to just copy them over...
+
+**1fad071e:**  Over a 5 tile black sequence, add a blue tile from left to right for every contiguous blue two block sequence in the input sequence.
+
+**2bcee788:**  Flip the pattern across the red tile, and then change the background color to pink.  Originally changed to green background, switched to mix things up between 2D trained transformers and 1D.
+
+**2bee17df:** Original was to fill black tile into green whenever a color was one wide from edge to black interior.  Inspired by this, we have solid gray blocks placed in a rigid pattern across samples.  The agent needs to learn that it will fill the blacks to yellows if there is a a single block color between grays.  This pattern can be extended across multiple gray blocks, so if there is a single colored tile, then a row of blacks between the next sequences of gray blocks which end on a color of no more than one colored tile, then fill those as well.  **This is complex and a case where the 2D did not transfer well to the 1D.  More samples may need to be added to make a complete solution.**
+
+**2c608aff:** Also does not transfer from 2D well, to fix the issue, we make multiple contiguous two color blocks in the same positions, split by black separators.  The agent needs to learn how to fill in blocks of a single color over the background up to the contiguous blocks.  It needs to extend information it gained from a single to a double, separated by the black tiles.
